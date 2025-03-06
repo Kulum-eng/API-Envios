@@ -10,7 +10,7 @@ import (
 	s_adapters "ModaVane/shipments/infraestructure/adapters"
 	s_controllers "ModaVane/shipments/infraestructure/http/controllers"
 	s_routes "ModaVane/shipments/infraestructure/http/routes"
-	s_core "ModaVane/shipments/core"
+	core "ModaVane/shipments/core"
 
 )
 
