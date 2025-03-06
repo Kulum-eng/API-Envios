@@ -5,7 +5,6 @@ import (
     "errors"
 
     "ModaVane/shipments/domain"
-    "ModaVane/shipments/domain/ports"
 
 )
 
