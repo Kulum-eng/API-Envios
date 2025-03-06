@@ -32,7 +32,6 @@ func CORS() gin.HandlerFunc {
 }
 
 func main() {
-	// Deshabilitar la redirección automática de barras diagonales
 	gin.SetMode(gin.ReleaseMode)
 	myGin := gin.New()
 	myGin.RedirectTrailingSlash = false
@@ -45,7 +44,6 @@ func main() {
 		return
 	}
 
-	// Configuración de envíos
 	shipmentRepository := s_adapters.NewMySQLShipmentRepository(db)
 	createShipmentUseCase := s_application.NewCreateShipmentUseCase(shipmentRepository)
 	getShipmentUseCase := s_application.NewGetShipmentUseCase(shipmentRepository)
