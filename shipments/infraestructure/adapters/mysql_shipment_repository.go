@@ -7,7 +7,7 @@ import (
     "ModaVane/shipments/domain"
 
 )
-//k
+
 type MySQLShipmentRepository struct {
     DB *sql.DB
 }
