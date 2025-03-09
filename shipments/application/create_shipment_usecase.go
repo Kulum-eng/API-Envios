@@ -1,7 +1,8 @@
-package application
+package aplication
 
 
-( 
+import ( 
+
 	"encoding/json"
 	"strconv"
 	"time"

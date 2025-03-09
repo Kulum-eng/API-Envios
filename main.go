@@ -69,7 +69,7 @@ func main() {
 	createShipmentController := s_controllers.NewShipmentController(createShipmentUseCase, getShipmentUseCase, updateShipmentUseCase, deleteShipmentUseCase)
 	s_routes.SetupShipmentRoutes(myGin, createShipmentController)
 
-	if err := myGin.Run(":8081"); err != nil {
+	if err := myGin.Run(":8086"); err != nil {
 		log.Fatalf("Error al iniciar el servidor: %v", err)
 	}
 }
